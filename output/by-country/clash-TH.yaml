@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: anydesk.com
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇹🇭 TH 02 - xiaohe
-  type: vless
-  server: www.ipget.net
-  port: 8880
-  uuid: e06b6255-1c90-4db0-bd8c-7704df82b27c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-cherry-7112.257.workers.dev
-- name: 🇹🇭 TH 03 - xiaohe
-  type: vless
   server: 43.133.110.81
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -44,7 +18,22 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 04 - xiaohe
+- name: 🇹🇭 TH 02 - xiaohe
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+    headers:
+      Host: ''
+- name: 🇹🇭 TH 03 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -67,7 +56,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
-  - 🇹🇭 TH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +64,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
-  - 🇹🇭 TH 04 - xiaohe
 rules:
 - MATCH,PROXIES
