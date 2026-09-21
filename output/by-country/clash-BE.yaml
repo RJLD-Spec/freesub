@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - xiaohe
+- name: 🇧🇪 BE 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
+  server: 141.227.137.177
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: autumn-dawn-fa6b.337-272.workers.dev
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - xiaohe
+  - 🇧🇪 BE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - xiaohe
+  - 🇧🇪 BE 01 - xiaohe
 rules:
 - MATCH,PROXIES
